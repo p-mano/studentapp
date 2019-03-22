@@ -1,0 +1,35 @@
+<app-menu></app-menu>
+
+
+        
+<table>
+  <thead>
+<tr>
+  
+  <td>Student Roll No.</td>
+  <td>Birth Date</td>
+  <td>First Name</td>
+  <td>Last Name</td>
+  <td>Parent Name</td>
+  <td>Parent Phone NO.</td>
+  <td>Address</td>
+  <td>Delete Student</td>
+  <td>Edit Student</td>
+</tr>
+  </thead>
+  <tbody>
+    <tr *ngFor='let student of list'>
+      <td>{{student.rollNo}}</td>
+      <td>{{student.birthDate}}</td>
+      <td>{{student.firstName}}</td>
+      <td>{{student.lastName}}</td>
+      <td>{{student.parentName}}</td>
+      <td>{{student.parentPhone}}</td>
+      <td>{{student.address}}</td>
+      <td><input type='button' value="Delete Student" (click)="deleteStudent(student)"></td>
+      <td><input type="button"  value="Edit Student" (click)="update(student)"></td>
+    </tr>
+  </tbody>
+</table>
+
+      

@@ -1,0 +1,26 @@
+
+<app-menu></app-menu>
+<div>
+<label for="fname">Roll Number</label>
+    <input type="text" [(ngModel)]="student.rollNo"   placeholder="Roll  Number">
+
+<label for="fname">Birth Date</label>
+    <input type="text" [(ngModel)]="student.birthDate"   placeholder="birth Date">
+
+<label for="fname">First Name</label>
+    <input type="text" [(ngModel)]="student.firstName"  placeholder="Your name..">
+
+  <label for="lname">Last Name</label>
+    <input type="text" [(ngModel)]="student.lastName"  placeholder="Your last name..">
+
+  <label for="fname">Parent Name</label>
+    <input type="text" [(ngModel)]="student.parentName" placeholder="Parent Name">
+
+  <label for="fname">Parent Phone</label>
+    <input type="text" [(ngModel)]="student.parentPhone"  placeholder="Parent Number">
+
+  <label for="fname">Address</label>
+    <input type="text" [(ngModel)]="student.address"  placeholder="Address">
+
+    <input type="button"  (click)="updateStudent(student)" value="Add Student">
+  </div>
